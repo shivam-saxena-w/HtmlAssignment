@@ -15,23 +15,24 @@
         }
 
         ul>li>a{
-            color: black;
+            color: #000000;
         }
 
         ol>li>a{
-            color: black;
+            color: #000000;
+        }
+
+        p{
+            padding-left: 2rem;
         }
 
         #subheader>ul>li{
             display: inline;
             padding: 1rem; 
         }
-        #subheader{
-            margin-left: 0.2rem;
-        }
 
         .tagname{
-            color: red;
+            color: #FF0000;
         }
 
         table {
@@ -73,6 +74,7 @@
             <p style="float: right; padding: 1rem 34rem 0rem 0rem;">WORLD'S LARGEST WEBDEVELOPER SITE!</p>
             <img src="./assets/W3Schools_logo.png" style="width: 25rem; height: 4rem;" alt="W3Schools_logo">
             <hr>
+            <!-- NAVIGATION LINKS -->
             <div id="subheader">
                 <ul>
                     <li> <a href="https://www.w3schools.com/html/html_intro.asp">HTML</a> </li>
@@ -83,17 +85,20 @@
             </div>
             <hr>
         </header>
-        
+        <!-- MAIN CONTENT -->
         <section>
-            <h2 class="heading">HTML Introduction</h2>
-            <div  style="padding-left: 2rem;">
-                <p>HTML is the standard markup language for creating Web pages</p>
+            <div>
+                <div class="heading">
+                    <h2>HTML Introduction</h2>
+                    
+                    <span>HTML is the standard markup language for creating Web pages</span>
+                    <ol>
+                        <li> <a href="#whatIsHtml">What is HTML</a> </li>
+                        <li> <a href="#whatIsHtmlElement">What is HTML element</a> </li>
+                        <li> <a href="#WebBrowser">Web Browsers</a> </li>
+                    </ol>
+                </div>
             </div>
-            <ol>
-                <li> <a href="#whatIsHtml">What is HTML</a> </li>
-                <li> <a href="#whatIsHtmlElement">What is HTML element</a> </li>
-                <li> <a href="#WebBrowser">Web Browsers</a> </li>
-            </ol>
 
             <div id="whatIsHtml" class="heading">
                 <h2>What is HTML?</h2>
@@ -109,19 +114,19 @@
 
             <div id="whatIsHtmlElement" class="heading">
                 <h2>What is an HTML Element?</h2>
+            </div>
                 <p>An HTML element is defined by a start tag,some content,and an end tag: </p>
                 <div class="snippet">
                     <p>&lt; <span class="tagname">tagname</span> &gt; Content goes here... &lt;<span class="tagname">/tagname</span>&gt;</p>
-                    <span>The HTML element is everything from the start tag to the end tag:</span>
+                    <p>The HTML element is everything from the start tag to the end tag:</p>
                     <br>
                     <p>&lt;<span class="tagname">h1</span>&gt; My first heading &lt;<span class="tagname">/h1</span>&gt;</p>
                     
                     <p>&lt;<span class="tagname">p</span>&gt; My first paragraph &lt;<span class="tagname">/p</span>&gt;</p>
 
                 </div>
-            </div>
 
-        
+                <!-- TABLE SECTION -->
                 <table>
                     <tr>
                         <th>Start Tag</th>
@@ -151,21 +156,28 @@
             
                 <div id="WebBrowser" class="heading">
                     <h2>Web Browsers</h2>
-                    <p>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents.<br>A browser does not display the HTML tags, but uses them to determine how to display the and display them correctly.<br>document:</p>
                 </div>
+                <p>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents.<br>A browser does not display the HTML tags, but uses them to determine how to display the and display them correctly.<br>document:</p>
 
                 <div class="center">
                     <img src="./assets/example.png" alt="example" id="examplePng">
             
-                </div >
+                </div>
 
                 <h2 class="heading">Submit a Review</h2>   
                 <form action="https://www.w3schools.com/html/html_forms.asp" method="get">
-                    <label for="">Name:</label><input type="text" name="" id=""><input type="radio" name="" id=""><label for="">Male</label><input type="radio" name="" id=""><label for="">Female</label><input type="radio" name="" id=""><label for="">Others</label>
+                    <label>Name:</label>
+                    <input type="text" >
+                    <input type="radio" name="gender" id="">
+                    <label>Male</label>
+                    <input type="radio" name="gender" id="">
+                    <label>Female</label>
+                    <input type="radio" name="gender" id="">
+                    <label>Others</label>
                     <br>
                     <br>
-                    <label for="">Rate It:</label>
-                    <select name="" id="">
+                    <label>Rate It:</label>
+                    <select>
                         <option value="verygood">Very Good</option>
                         <option value="good">Good</option>
                         <option value="excelent">Excelent</option>
@@ -173,13 +185,13 @@
                         <option value="veryBad">Very Bad</option>
                     </select>
                     <br>
-                    <textarea name="" id="" cols="30" rows="5" placeholder="Please add a review"></textarea>
+                    <textarea cols="30" rows="5" placeholder="Please add a review"></textarea>
                     <br>
                     <br>
                     <button>Submit</button>
                 </form>
         </section>
 
-        <!-- <a href="example.html">here</a> -->
+
     </body>
 </html>
